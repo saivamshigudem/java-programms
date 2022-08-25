@@ -3,3 +3,5 @@ class Hello{
    System.out.println("Hello World");
  }
 }
+
+// merge the files
