@@ -4,3 +4,5 @@ class Hello{
  }
 }
 // Thank you :)
+
+// merge the files
