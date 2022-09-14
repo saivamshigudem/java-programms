@@ -1,0 +1,138 @@
+The super and this must be the first statement inside constructor otherwise the compiler will throw an error.
+Enhanced for loop :
+this is used to directly print the array elements
+ex:
+class Loop{
+public static void main(String []args){
+int a[]={1,2,3,4};
+for(int z : a){
+System.out.print(z+" ");
+}
+}
+}
+Output:
+1 2 3 4
+varargs means variable length arguments
+in this we can take multiple inputs by format of ... in the parameters
+ex:
+class cal{
+public int name(int ... a){
+int sum=0;
+for(int k :a){
+	sum = sum+k;
+}
+return sum;
+}
+}
+public class varargs{
+public static void main(String []args){
+cal obj = new cal();
+System.out.println(obj.name(2,5,7,8));
+
+}
+}
+Output:
+22
+inheritance:
+getting all the properties from parent class to child class is called inheitance.
+it can done by extends keyword.
+IS- A, HAS-A
+when use extends for class that is known as is a relation.
+when you create a obj for other class is known as has a relation.
+Super key:
+when you create two constructor in different classes one extends from another class then when you create obj for that subclass it calls the suoer class.
+ex:
+class A{
+public A(){
+System.out.println("in A class");
+}
+}
+class B extends A{
+public B(){
+System.out.println("in b class");
+}
+}
+class C {
+public static void main(String []args){
+B obj = new B();
+}
+}
+Output:
+in A class
+in b class
+Multiple inheitance:
+using classes we cant make the multiple inheritance it will return ambiguity problem.
+getters and setters 
+the way to acces the variables in class to another is to use a method then use set() for intializing the value and for fetching the data we use get().
+we have to use private access specifier because it binds the data with method it is called as encapsulation.
+Wrapper class:
+everything in java should be object-oriented where we use int,char,float are primitive data types and are not object oriented so when we use Integer it will become wrapper class.
+ex: Interger i = new Interger(5);
+Wrapping is also called as boxing.
+to convert the datatype from one form to another we use parse 
+ex:
+parseInt will take the input as string and return int.
+ex:
+String str = "123";
+int n = Interger.parseInt(str);
+abstract :
+when you write abstract infront of class it will become abstract class . when we make a class abstract we cant create a instanace or object of that class.
+if we a abstract method in class then we should make it abstract class but inside a abstract class we can have non-anbstract methods also.
+the only way to access the abstract method is to extend it to the another class and should have the same method if method is not there your class will also become abstract class.
+final:
+when you make a final variable or method or class it cant be changed later or overriden .
+but if we have not assigned the value later given it will be the final value.
+Interface:
+we cant create objects for interface because it doesnt have constructors.
+types of interface
+1.Normal Interface
+2.Single abstract method
+3.Marker Interface
+Access Modifier:
+1)final
+2)abstract
+3)public
+4)protected
+5)private
+we cant use private and protected with the class
+by default the class will always be default class.
+Exception : means an error exception handlng means handling the error.
+2 types of Exception
+1)Syntax Error
+2)Runtime  exception
+in the syntax if we the System.err.println("hello")
+we get output in reline 
+:
+hello
+Finally:
+this keyword is to run the peogram wheather the program throws exception or error the finally block will give output.
+the process is
+1.try block: enter the expection in this block.
+2.catch: enter the data what happens when exception occurs
+3.finally: close the exception here.
+we can handle with try block and without catch block or finally block 
+reason : use try block with resourse
+MultiThreading:
+it is a process of multitasking.
+	Thread->unit of process.
+by default in every java program we have a multi called main.
+Thread is a in-built class in java
+we can create onject for thread
+Thread t1 = new Thread();
+run() method automatically the method call.
+sleep() this method is used for waiti for a time of n section then mention the second in (2000) = 2sec;
+wait() and notify() both are same methods
+thread.isAlive is a method which returns true or false for the thread
+this is method after join returns false before it retunrs true.
+.getName returns the thread number.
+priority:
+min_priority
+max_priority
+Servlets:
+we can create servlets pages without .xml files because we got new feature as annotations @WebServlet.
+collection is a concept,
+Collection is a interface,
+Collections are classes.
+ArrayList is a class which implements indirectly.
+We can duplicate values in list but we can't have duplicate values in set. Therefore set is a unique.
+Treeset it gives everything in a sorted order.
