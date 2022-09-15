@@ -19,7 +19,6 @@
      public static void main(String []args){
          char nptel[]={'S','W','A','Y','A','M'};
            system.out.println(______);
-           }
          }
        }
   in the following some options are given. you have choose correct option for the argument in system.out.print() function to print the first and the last but the characters in the array nptel.
@@ -30,5 +29,117 @@
    
    the solution = d
    
- 3.  consider the following program
+ 3.  consider the following program 
+     public class question{
+     public static void main(String []args){
+        int product =1;
+        int n = Interger.parseInt(args[0]);
+        for(int i=1; i<= n; i++)
+        product *=1;
+           system.out.println(product);
+           }
+         }
+    what will be output of the program if it is executed??
+   a) print the value of n!
+   b) print the value of n(n+1)/2
+   c) print the value of 1*3*5*.....*n
+   d) print the value of 1!*2!*3!*......*n!
+   
+   the solution = a
+   
+   
+ 4.   which of the following can be used as name of variable in java??
+   a) byte
+   b) throw
+   c) this 
+   d) extend
+   
+   the solution = d
+   
+ 5.  consider the following program??
  
+     public class question{
+     public static void main(String []args){
+        int n = Interger.parseInt(args[0]);
+        int v = 1;
+        while (v<=n/2)
+        v = 2*v;
+           system.out.println(v);
+           }
+         }
+   
+   what will be output of the program if it is executed? let n=10
+   a) 5
+   b) 20
+   c) 8
+   d) 10
+   
+   the solution = c
+   
+    
+ 6.  A platform is a hardware or software of enviroment in which a program runs. Which of the following is/are Java platform compomnent(s)?
+   a) HTML
+   b) Java Virtual Machine
+   c) Java Application Programme Interface(API)
+   d) HotJava
+   
+   the solution = b,c
+   
+   
+ 7.  What is the value returned by the method f() defined below?
+    public static int f(int x, int y){
+    return (x>y) ? y : x; 
+    }
+   a) the sum of x and y that is ,x+y
+   b) the difference of x and y that is, x-y
+   c) the max of x and y , the larger value of x and y 
+   d) the min of x and y , the smaller value of x and y
+   
+   the solution = d
+   
+   
+8.   A java file with extension '.class' contains
+
+   a) Java source code
+   b) HTML tags
+   c) Java Byte code
+   d) A programme file written in java programme language
+   
+   the solution = c
+   
+   
+9.  Which of the following is used to find anf=d fix the bugs in the Java programs?
+
+
+   a) JVM
+   b) JRE
+   c) JDK
+   d) JDB
+   
+   
+   the solution = d
+   
+10.  Consider the following program?
+   
+    public class question{
+     public static void main(String []args){
+     int f =0, g=1;
+        for(int i=0;i<5;i++){
+           system.out.println(f);
+           f = f+g;
+           g = f-g;
+        }
+     }
+   }
+   
+   
+   
+  What will be program if it is executed?
+  
+   a) Print first six even numbers
+   b) Print first six odd numbers
+   c) Print first five even numbers
+   d) Print first six Fibonacci numbers
+   
+   
+   the solution = d
