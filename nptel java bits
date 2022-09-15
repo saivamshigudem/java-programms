@@ -14,4 +14,21 @@
    
    the answer = 15
    
-2.  
+2.  following is a piece of code where some parts of code are the missing ??
+  public class question{
+     public static void main(String []args){
+         char nptel[]={'S','W','A','Y','A','M'};
+           system.out.println(______);
+           }
+         }
+       }
+  in the following some options are given. you have choose correct option for the argument in system.out.print() function to print the first and the last but the characters in the array nptel.
+   a) nptel[nptel.length-2]+nptel[0]
+   b) nptel[0]+nptel[nptel.length-2]
+   c) ""+nptel[nptel.length-2] +nptel[0]
+   d) ""+ nptel[0] +nptel[nptel.length-2]
+   
+   the solution = d
+   
+ 3.  consider the following program
+ 
