@@ -1,0 +1,17 @@
+1. consider the following program 
+   public class question{
+     public static void main(String []args){
+        for(int i=7;i<3;i-=5){
+           system.out.println(i++i);
+        }
+     }
+   }
+   what will be the output of the program??
+   a) 15
+   b) 12
+   c) 14
+   d) 10
+   
+   the answer = 15
+   
+2.  
