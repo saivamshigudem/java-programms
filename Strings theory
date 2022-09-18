@@ -1,0 +1,19 @@
+String  are datatypes in java which stores collection of words or we can say collection of char;
+
+Strings are two types 
+1) mutable String
+2)immutable Strings
+
+1-->mutable strings are those which can be changed after the giving a value tp it 
+ex : String a =" vamshi";
+ a = "rocky";
+ sop(a);
+ output:
+ rocky
+ 
+ 2--> immutable strings are 
+ StringBuffer
+ StringBuilder
+ 
+ 
+ 
