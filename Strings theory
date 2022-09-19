@@ -98,3 +98,15 @@ String str1= "vamshi";
   (str1==str2)--> returns false
   str1.equals(str2)--> returns false //becasuse java is case sensitive comparing small letter to captial letters
   str1.equalsIgnoreCase(str2)--> returns true
+  
+  
+  4) CompareTo() returns int values by comparing each char by char by ASCII value of it 
+  
+  it returns 0 --> equals
+             +ve --> s1 is greater than s2
+	     -ve --> s2 is greater than s1
+	     
+Concation of the strings
+
+
+	     
