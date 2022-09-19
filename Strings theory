@@ -23,3 +23,55 @@ the strings memory is allocated in the heap memory .
 the heap memory has the stringpool and there in memory is allocated for it . where it doesnt allow duplicates value in it.
 
 when you create a string with a new keyword it will alloacted in the heap but not in the stringpool where duplicates are allowed.
+
+
+difference ways to compare string values:
+1) == --> reference variable will be compared..
+2) equals() method in java. --> values g string will be compared
+3)equalsIgnoreCase() --> Strings will be compared after ignoring case sentisitivity..
+4)compareTo() --> values string will be compared lexicographycally (means by character by character)..
+
+example for ==
+String str1= "vamshi";
+String str2 = "vamshi";
+String str3 = new String("vamshi");
+if(str1==str2)--> returns true
+if(str2==str3)--> returns false
+
+program 
+
+
+public class Strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1= "vamshi";
+		String str2 = "vamshi";
+		String str3 = new String("vamshi");
+  String str4 = new String("vamshi");
+		if(str1==str2) {
+			System.out.println("true");
+		}else {
+			System.out.println("false");
+		}
+		if(str2==str3) {
+			System.out.println("true");
+		}else {
+			System.out.println("false");
+		}
+  if(str3==str4){
+  	System.out.println("true");
+		}else {
+			System.out.println("false");
+		}
+		
+	}
+
+}
+
+
+output:
+true
+false
+false
+
