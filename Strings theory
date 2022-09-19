@@ -75,3 +75,26 @@ true
 false
 false
 
+
+2)equalsTo()
+example:
+		String str1= "vamshi";
+		String str2 = "vamshi";
+		String str3 = new String("vamshi");
+  String str4 = new String("vamshi");
+  str1.equals(str2)--> returns true
+  str3.equals(str4)--> returns true
+  str1.equals(str3)--> returns true
+
+
+
+3)equalsIgnoreCase
+
+example
+String str1= "vamshi";
+		String str2 = "Vamshi";
+		String str3 = new String("vamshi");
+  String str4 = new String("vamshi");
+  (str1==str2)--> returns false
+  str1.equals(str2)--> returns false //becasuse java is case sensitive comparing small letter to captial letters
+  str1.equalsIgnoreCase(str2)--> returns true
