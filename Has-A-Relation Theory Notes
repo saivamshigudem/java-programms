@@ -1,0 +1,102 @@
+Relationship in java
+====================
+As a part of application developent, we have to use few entities(class) as per
+our application requirement.
+By promoting relationship we can achieve
+a. Optimisation over our code(less lines of code)
+b. Code Reusability
+c. Execution time
+d. sharability.
+How many types of relationship exists in Java?
+we have 2 types of relationship
+a. IS-A(achieved through extends keyword)
+b. HAS-A
+What is the difference b/w IS-A relationship and HAS-A relationship?
+IS-A relationship
+=> It is able to define inheritance b/w 2 entity classes
+=> It also promotes code reusability in java application.
+HAS-A relationship
+=> It will define associations b/w 2 entities in java application.
+=> Through association b/w entites it will imporve communication b/w 2 entites and data
+navigation b/w 2 entites.
+Associations in Java
+===================
+In Java we have 4 types of association
+a. 1 to 1 association
+b. 1 to many association
+c. Many to One association
+d. Many to Many association.
+
+To achieve association b/w 2 entities we have to declare either single reference or array of
+reference variable of an entity in another entity class.
+eg:
+class Address{
+Integer pinNo;
+Integer doorNo;
+String state;
+String city;
+String country;
+}
+class Student{
+String name;
+Integer age;
+Integer sid;
+//HAS-A variable
+Address address;//1 to 1 Association
+//HAS-A variable
+
+Address[] address;//1 to Many Association
+}
+Key points of Associations
+===========================
+DependencyInjection
+a. The process of Injecting the dependent object into target object is called
+"Dependancy Injection".
+Target Object => The object which is been given to the developers for usage is called
+"Target Object".
+Dependent Object => The object which is an helper object for the target object is called
+"Dependant Object".
+eg#1
+class Address{}//Dependant Object
+class Student{}//Target Object
+How to perform Dependancy Injection in Java?
+It can be done in 2 ways
+a. Constructor Injection.
+a. We can inject primitive value to object.
+b. We can inject one more object into another object.
+b. Setter Injection.
+a. We can inject primitive value to object.
+b. We can inject one more object into another object.
+
+One-One Association
+===================
+It is a relationship b/w 2 entities, where one entity of one class is mapped to one more entity
+of another class.
+eg:
+Employee(target object)
+|
+|HAS-A
+|
+Account(dependent object)
+refer: ONE_ONE_EXample.png
+refer: One-One-Association(Constructor Injection)
+One-One-Association(Setter Injection)
+When to use Constructor Injection and when to use Setter Injection?
+Ans. It totally depends on the project requirement
+Constructor => If the dependant object is ready at the time of target object creation
+then perform "Constructor injection".
+Setter => If the dependant object is not ready at the time of target object creation
+then perform "Setter injection".
+
+One to Many Assocation
+======================
+It is a relationship b/w 2 entities, where one entity of one class is mapped to multiple
+entities of another class.
+eg:
+Department(1) //Target Object
+|
+|HAS-A
+|
+Employee(Many)//Dependent Object
+refer: ONE_ONE_EXample.png
+refer: One-Many-Association(Constructor Injection)
