@@ -100,3 +100,68 @@ Department(1) //Target Object
 Employee(Many)//Dependent Object
 refer: ONE_ONE_EXample.png
 refer: One-Many-Association(Constructor Injection)
+
+
+
+
+Previous session : HAS-A relationship
+(1:1,1:M)
+==================================================
+Today session : HAS-A relationship(M:1,M:M)
+Association
+a. Composition
+b. Aggregation
+Many to one Association
+=======================
+It refers to relationship b/w entites, where mulitple instance of one entity should be mapped to
+one instance of another entity.
+eg: Multiple student have joined with single branch
+public class Branch{
+private String bid;
+private String bloc;
+}
+public class Student {
+private Integer sid;
+private String sname;
+private Integer age;
+//HAS-A
+private Branch branch;
+}
+
+Many to Many Association
+========================
+It refers to relationship b/w entites, where mulitple instance of one entity should be mapped to
+Multiple instance of another entity.
+eg: Many students have taken Many courses
+public class Course{//Many
+private Integer cid;
+private String cname;
+private Integer cost;
+}
+public class Student{//Many
+private Integer sid;
+private String sname;
+//HAS-A
+private Course[] course;
+}
+refer: Many-Many-Association(Construtor Injection)
+Many-One-Association(Construtor Injection)
+refer: Many-To-Many.png
+
+Many-To-One.png
+Association
+a. Composition
+b. Aggregation
+
+What is the difference b/w Composition and Aggregation?
+Aggregation => In case of Aggregation,even if the contained object does not exist still the
+Container object can be reused.
+Compostion => In case of Composition,if the contained object does not exist then container
+Object can't be reused.
+eg: Relationship b/w library and student => Aggregation
+Relationship b/w library and books => Composition
+Relationship b/w Department and Professor => Aggregation
+Relationship b/w University and Department => Composition
+Relationhsip b/w Human and Heart => Composition
+Relationship b/w Mobile and charger => Aggregation
+refer:Composition vs Aggregation.png
