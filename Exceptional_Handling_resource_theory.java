@@ -363,3 +363,114 @@ return this.name;
 Student student = new Student("sachin");
 System.out.println(student);//JVM calls student.toString()
 output: sachin
+
+
+
+If we use our own class inside try with resource then will it consider as resource
+ans. no
+how we can edit the predefined class as implement autocloseable
+predefined not possible as source code would not be shared.
+Can we still close the resouce that does not implement autoclosable in finally
+block?
+yes possible, iff the class contains close()
+On which criteria they have made only java.io and java.sql as auto closable ?
+Normally resources are present inside java.io and java.sql
+sir is it required us to remember version from where these added concept came
+only jdk1.5 and Jdk1.8 version feature are used so remember them.
+almost all of these constructors are deprecated in latest version of java ?
+use jdk8, later we speak about valueOf()
+Boolean b1 = new Boolean("1");
+Boolean b2 = new Boolean("0");
+what will be the output of this code
+false
+false
+I have one small doubt in Integer class Why they have implemented constructor which
+will accept
+String type of arguement ..why we need to pass int values in double quotes ?
+I want to understand the use case of wrapper class, please
+ans. In real time data movement always happens in String.
+String age = request.getParameter("age");
+Integer data = new Integer(age);
+
+Sir can you give 2-3 examples of application/proj build using the entire Java
+stack...so that we
+could get a idea..what type of application we will be able to develop after this
+course?
+CoreJava-> standalone application
+JEE -> WebApplication's
+Springboot and hibernate -> Enterprise application
+you are handling the unchecked expections with try and catch and using throw
+keyword to send to JVM, but in the
+method signature you are using throws which is checked expections. How is this
+possible?
+throws => checked Exceptions
+throw -> uncheckedException and CustomException
+I have one doubt regarding for each loop int the following code
+Scanner scan = new Scanner(System.in);
+int[] arr = new int[5];
+//It can't be used to inserting the values to the array
+for(int a : arr)
+{
+a = scan.nextInt();
+}
+
+//foreach is used only for reading the data from collection/array.
+for(int a : arr)
+{
+System.out.print(a + " ");
+}
+input: 1 2 3 4 5
+output: 0 0 0 0 0
+I don't understand why it is not updating values, can you explain.
+class InvalidUserException extends Exception
+{
+InvalidUserException(String msg)
+{
+super(msg);
+}
+}
+sir this calls => Exception class Parent constructor
+Sir when we have wrapper class concept in Java so why Java is still called not
+fully object
+oriented?We can easily convert the primitive types to object type?
+Because java still supports primitive data types, so we can't say it is fully
+object oriented.
+Sir i heard so many times from u that creating object is costly event for the
+jvm......
+Wt does that mean by costly event/(just curiosity to know sir)
+class Object{
+static{
+....
+}
+Object(){
+}
+}
+class Parent extend Object{
+static{
+System.out.println("parent class loading");
+}
+Parent(){
+super()
+}
+}
+class Child extends Parent{
+static{
+System.out.println("child class loding");
+}
+Chid(){
+super();
+}
+}
+new Child();
+JDK8
+====
+
+try(br1=new BufferedReader(new FileReader("sample.txt"));br2=new BufferedReader(new
+FileReader("sample.txt"));){
+}
+JDK9
+====
+br1=new BufferedReader(new FileReader("sample.txt"));
+br2=new BufferedReader(new FileReader("sample.txt"));
+try(br1;br2){
+}
